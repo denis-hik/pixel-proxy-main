@@ -24,13 +24,10 @@ let config = {
   port: process.env.PORT || 9999,
   encodingMethod: process.env.ENCODING_TYPE || "BINARY",
   b64: process.env.B64 === "false" ? false : true || true,
-  size:
-    process.env.WIDTH || process.env.HEIGHT
-      ? {
-          width: process.env.WIDTH || 128,
-          height: process.env.HEIGHT || 128,
-        }
-      : "auto",
+  size: {
+          width: 128,
+          height: 128,
+        },
   outPath,
 };
 if (!config.keepArtifacts) fs.rmSync(outPath, { recursive: true, force: true });
