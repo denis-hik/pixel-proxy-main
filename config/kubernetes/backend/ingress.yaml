@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pixelproxy-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/proxy-body-size: 256m
+spec:
+  tls:
+    - hosts:
+        - pixelproxy.example.com
+      secretName: pixelproxy-example-tls
+  rules:
+    - host: pixelproxy.example.com
+      http:
+        paths:
+          - path: /(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: pixelproxy
+                port:
+                  number: 80

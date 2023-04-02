@@ -1,0 +1,7 @@
+OUT.bmp
+output.mp4
+*.log
+node_modules
+OUT
+.env*
+TMP

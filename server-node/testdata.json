@@ -1,0 +1,48 @@
+{
+  "id": 1981,
+  "uid": "ff828419-638b-4090-a5d1-473a55353266",
+  "name": "OWO Eatery",
+  "type": "What's This?",
+  "description": "We are committed to using the finest ingredients in our recipes. No food leaves our kitchen that we ourselves would not eat.",
+  "review": "They are way understaffed, where the cashier needs to stop taking orders to help pack to-go orders. The line ends up piling up and people are neglected.  Seen this happen multiple times during lunch hours.",
+  "logo": "https://loremflickr.com/500/500/restaurant",
+  "phone_number": "(669) 177-4708 x5262",
+  "address": "Suite 612 101 Linda Locks, O'Keefeton, NE 12961",
+  "hours": {
+    "monday": {
+      "opens_at": "10:29 AM",
+      "closes_at": "1:52 PM",
+      "is_closed": false
+    },
+    "tuesday": {
+      "opens_at": "10:25 AM",
+      "closes_at": "10:13 PM",
+      "is_closed": true
+    },
+    "wednesday": {
+      "opens_at": "7:28 AM",
+      "closes_at": "5:16 PM",
+      "is_closed": false
+    },
+    "thursday": {
+      "opens_at": "8:33 AM",
+      "closes_at": "3:28 PM",
+      "is_closed": true
+    },
+    "friday": {
+      "opens_at": "11:59 AM",
+      "closes_at": "1:26 PM",
+      "is_closed": false
+    },
+    "saturday": {
+      "opens_at": "9:37 AM",
+      "closes_at": "7:42 PM",
+      "is_closed": false
+    },
+    "sunday": {
+      "opens_at": "8:19 AM",
+      "closes_at": "5:23 PM",
+      "is_closed": false
+    }
+  }
+}
